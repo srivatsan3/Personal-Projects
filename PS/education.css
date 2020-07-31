@@ -1,0 +1,154 @@
+@media (min-width: 769px){
+	table{
+	font-family: "arial", sans-serif;
+	font-size: 2vw;
+	width: 100%;
+	margin-right: 1%;
+	border-collapse: collapse;
+	margin-bottom: 1%;
+}
+h1 {
+	font-size: 3vw;
+	font-family: "Times New Roman", sans-serif;
+	border-left: 12px solid blue;
+	padding-left:1%;
+	width:40%;
+	background-color: cyan;
+}
+th{
+	border: 1px solid black;
+	text-align: center;
+	padding: 1%;
+	background-color:#1C8B00;
+	color:white;
+}
+td{
+	border: 1px solid black;
+	text-align: center;
+	padding: 1%;
+}
+.comment{
+	font-size: 2vw;
+	color: green;
+	opacity: 0.8;
+}
+tr:nth-child(odd)
+{
+	background-color: #46FF17;
+}
+tr:nth-child(even){
+	background-color: #B5FFA2;
+	color:black;
+}
+
+.headerborder{
+	margin-top: 3%;
+}
+.icon{
+	text-align: center;
+	font-size: 1.5vw;
+	width: 15%;
+	margin-right:2%;
+	margin-top:1%;
+	border:1px solid blue;
+	float: left;
+}
+
+.home{
+	text-align: center;
+	font-size: 1.5vw;
+	width: 15%;
+	float: left;
+	margin-right:32%;
+	margin-top:1%;
+	border:1px solid blue;
+}
+
+.icon:hover,.home:hover, .icon:active, .home:active
+{
+	background-color: gray;
+	color:white;
+}
+a, a:visited{
+	color: black;
+	text-decoration: None;
+}
+}
+
+@media (max-width: 768px){
+table{
+	margin-top: 2%;
+	width:100%;
+	border: 1px solid black;
+	margin-bottom:2%;
+	border-collapse: collapse;
+}
+th{
+	font-family: "arial" serif;
+	font-size: 5.5vw;
+	text-align: center;
+	padding-left: 0.5%;
+	padding-right:1%;
+	padding-top:1%;
+	border:1px solid black;
+	background-color: #1C8B00;
+	color:white;
+}
+td{
+	font-family: "Arial" sans-serif;
+	font-size: 4.5vw;
+	text-align: center;
+	padding-left:0.5%;
+	padding-right:0.5%;
+	padding-top:1%;
+	border:1px solid black;
+}
+tr:nth-child(odd){
+	background-color: #46FF17;
+}
+tr:nth-child(even){
+	background-color: #B5FFA2;
+}
+
+h1{
+	text-align: center;
+	font-size: 7vw;
+	font-style: bold 2px;
+	color:blue;
+	margin-left: 25%;
+	width:50%;
+	float:left;
+	background-color:cyan;
+	text-decoration: underline blue;
+}
+
+.icon, .home{
+	text-align: center;
+	font-size: 6vw;
+	width: 98%;
+	margin-left:1%;
+	margin-top:1%;
+	border:1px solid blue;
+	float: left;
+}
+.headerborder{
+	display:none;
+}
+.icon:hover,.home:hover, .icon:active, .home:active
+{
+	background-color: gray;
+	color:white;
+}
+a, a:visited{
+	color: black;
+	text-decoration: None;
+}
+
+.comment{
+	width: 60%;
+	float:left;
+	font-size: 4vw;
+	color: green;
+	opacity: 0.8;
+}
+}
