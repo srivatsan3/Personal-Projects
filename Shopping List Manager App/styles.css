@@ -1,0 +1,93 @@
+.toBuyList{
+	width: 45%;
+	float: left;
+	color: white;
+	font: 1.2vw Arial, sans-serif;
+	padding-left: 5%;
+}
+
+.buyList{
+	color:white;
+	font: 2vw Arial, sans-serif;
+	text-align: left;
+}
+
+.input{
+	width: 100%;
+	float: left;
+	text-align: center;
+	box-sizing: 50%;
+}
+input, button.additem{
+	border-radius: 5%;
+	border-bottom: 1%;
+	font: 1.5vw Arial, sans-serif;
+}
+
+.boughtList{
+	width: 50%;
+	float: left;
+	color: white;
+	font: 1.2vw Arial, sans-serif;
+}
+
+h1{
+	text-align: center;
+	color: #557c3e;
+	text-shadow: 1.5px 1.5px 1.5px  #000000;
+	background-color: #FFBB00;
+	margin: 0px;
+	border: none;
+	padding: 1%;
+	font: 3.8vw Arial, sans-serif;
+}
+body{
+	margin: 0px;
+	background-color: #61122f;
+	box-sizing: border-box
+}
+
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	padding: 1%;
+	padding-top: 0px;
+	margin-top: 0.5%;
+	font: 3vw Calibri, sans-serif;
+}
+.instructions{
+	color: #E8E8E8;
+	padding-left: 1%;
+	font: 1.2vw Calibri, sans-serif;
+}
+.inputname{
+	color: white;
+	text-align: center;
+	font: 2vw Calibri, sans-serif;
+}
+
+.bought{
+	color:white;
+	font: 2vw Arial, sans-serif;
+	text-align: left;
+}
+
+.Noitem{
+	margin-top: none;
+	color:white;
+	font: 1.5vw Arial, sans-serif;
+	text-align: left;
+}
+
+button.buy, button.remove{
+	border-radius: 5%;
+	border-bottom: 1%;
+	font: 1.5vw Arial, sans-serif;
+}
+
+ol{
+	/*list-style: none;*/
+	padding-left: 2%;
+}

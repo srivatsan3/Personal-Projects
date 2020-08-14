@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app = 'ShoppingListApp'>
+<head>
+	<meta charset="uft-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	<link rel = "stylesheet" href = "styles.css">
+	<title>Shopping List Managing App</title>
+</head>
+<body>
+	<h1>WELCOME TO THE SHOPPING LIST MANAGER APP</h1>
+
+	<h2>You can Add New items to your list,  Delete items in your list and tick off bought items in your list as per your convenience</h2>
+
+	<div class='instructions'>
+	<div>INSTRUCTIONS TO USE:</div>
+	<div>1. Enter Item Name(Max Length: 45 characters) and Item Quantity in respective fields and click Add Item Button</div>
+	<div>2. Your List will be displayed, Click on Bought Item button to add item to Bought List</div>
+	<div>3. Click on Remove button to remove an item from list which you do not want to buy</div>
+</div>
+
+	<div id = "list" ng-controller='ShoppingListController as Shpctrl'>
+		<h3 class="inputname">Enter Your Shopping list, by Item name and Quantity</h3>
+		<div class = "input">
+		<form name="inputform">
+		<input type = 'text' id ="itemName" name ="itemName" ng-model='Shpctrl.itemName' placeholder="Enter the Item Name" size="50" maxlength="45" required>
+
+		<input type = 'text' id="quantity" name="quantity" ng-model='Shpctrl.itemQuantity' placeholder="Enter the Quantity of this Item" size="50"  required>
+
+		<button ng-click ="Shpctrl.addItem();" class="additem" ng-if="inputform.itemName.$valid && inputform.quantity.$valid">Add Item</button>
+	</form>
+	</div>
+		<div class="toBuyList">
+		<h3 class="buyList">To Buy List</h3>
+		<div ng-if ="Shpctrl.items.length == 0" class="Noitem">
+			Nothing Left in To Buy List!!
+		</div>
+		<ol>
+			<li ng-repeat="item in Shpctrl.items">
+				{{ item.quantity }} of {{ item.name }}
+				<button ng-click = "Shpctrl.removeItem($index);" class="remove">Remove Item</button>
+				<button ng-click = "Shpctrl.boughtItems($index);" class="buy">Bought Item</button>
+			</li>
+		</ol>
+	</div>
+	</div>
+	<div ng-controller = 'AlreadyBoughtController as boughtctrl' class ="boughtList">
+		<h3 class="bought">Already Bought List:</h3>
+		<ul>
+			<li ng-repeat = 'item in boughtctrl.items'>
+				Bought {{ item.quantity }} of {{ item.name }}
+			</li>
+		</ul>
+		<div ng-if="boughtctrl.items.length == 0" class="Noitem">Nothing Bought Yet!!</div>
+	</div>
+
+</body>
+</html>
