@@ -26,9 +26,9 @@
 		<form name="inputform">
 		<input type = 'text' id ="itemName" name ="itemName" ng-model='Shpctrl.itemName' placeholder="Enter the Item Name" size="50" maxlength="45" required>
 
-		<input type = 'text' id="quantity" name="quantity" ng-model='Shpctrl.itemQuantity' placeholder="Enter the Quantity of this Item" size="50"  required>
+		<input type = 'text' id="quantity" name="quantity" ng-model='Shpctrl.itemQuantity' placeholder="Enter the Quantity of this Item" size="50" required>
 
-		<button ng-click ="Shpctrl.addItem();" class="additem" ng-if="inputform.itemName.$valid && inputform.quantity.$valid">Add Item</button>
+		<button ng-click ="Shpctrl.addItem();" class="additem" ng-if="inputform.itemName.$valid && inputform.quantity.$valid" type="reset">Add Item</button>
 	</form>
 	</div>
 		<div class="toBuyList">
